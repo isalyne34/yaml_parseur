@@ -1,0 +1,5 @@
+---
+technologies:
+- IA
+  - Machine Learning  # Erreur : mauvaise indentation dans la liste
+  - NLP

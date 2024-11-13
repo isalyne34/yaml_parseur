@@ -1,0 +1,20 @@
+---
+description: |
+   Ceci est un texte
+   sur plusieurs lignes.
+
+introduction: >
+   Texte avec retour à la ligne,
+   mais sans saut de ligne.
+
+points_importants: &points
+   - Simplicité
+   - Flexibilité
+   - Lisibilité
+
+résumé: *points
+
+---
+utilisateur: ~
+actif: true
+compte_confirme: false

@@ -1,0 +1,11 @@
+---
+personne:
+  nom: "Alice"
+  age: 30
+  adresse:
+    rue: "123 Rue Imaginaire"
+    ville: "Exempleville"
+  hobbies:
+    - Lecture
+    - Musique
+    - Sports

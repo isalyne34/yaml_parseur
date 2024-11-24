@@ -1,5 +1,5 @@
 # YAML PARSER
-
+*Réalisé par : Isalyne LLINARES--RAMES DO4 2024*
 # Objectif 
 
 - Ecrire la grammaire du langage YAML
@@ -52,8 +52,30 @@ Pour définir une grammaire, on utilise la notation Backus-Naur Form aussi appel
 <bloc de ligne> ::= (<indentation> <texte> <saut de ligne>)*
 
 <saut de ligne> ::= "\n"
-<indentation> ::= "    "
+<indentation> ::= "  "
 ```
 ## Automate correspondant à la grammaire
 
-etat par etat voir ce que je peux faire 
+On utilise un automate à pile afin de vérifier l'indentation qui est importante dans le langage YAML.
+L'indentation se fait principalement après avoir rencontré un tableau ou une liste. On vérifie donc que les éléments suivants sont bien indentés.
+
+![alt text](image-1.png)
+## Parseur
+
+Ce parseur permet de vérifier si un fichier est conforme à la grammaire YAML. Il est codé en Python.
+Pour cela, on parcourt le fichier caractère par caractère et selon l'état actuel, l'état passé et l'indentation, on détermine si le caractère est conforme à la grammaire. Si ce n'est pas le cas, on génère une erreur sinon on continue jusqu'à la fin du fichier.
+
+### Exemple d'utilisation
+
+**Prérequis :** Avoir Python installé sur votre machine
+
+- Cloner le repository 
+- Ajouter dans le dossier le fichier à tester ou choisir un fichier existant
+- Dans le fichier parseurtest.py, modifier le nom du fichier à tester (ligne 303)
+- Puis lancer le fichier parseurtest.py grâce à la commande `python parseur.py`
+
+> [!CAUTION]  
+> On considère qu'une indentation correspond à 2 espaces  
+
+> [!TIP]  
+> Les fichiers file1 à 3 sont des exemples de fichiers conformes à la grammaire YAML, tandis que les fichiers file4 à 6 ne le sont pas.

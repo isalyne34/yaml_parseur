@@ -1,3 +1,5 @@
 ---
-nom "Alice"
-age: 30
+technologies:
+- IA
+  - MachineLearning  # Erreur : mauvaise indentation dans la liste
+  - NLP

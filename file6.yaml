@@ -1,5 +1,2 @@
----
-technologies:
-- IA
-  - Machine Learning  # Erreur : mauvaise indentation dans la liste
-  - NLP
+point: &points avec texte en plus
+points_importants: *points avec texte en plus  # Erreur : alias suivi de texte non permis

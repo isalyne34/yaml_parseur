@@ -1,8 +1,6 @@
----
 nom: OpenAI
 type: Organisation
 technologies:
   - IA
-  - Machine Learning
+  - Machine-Learning
   - NLP
-...
